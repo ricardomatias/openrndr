@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PropertyAnimationKey - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.animatable</a>&nbsp;/&nbsp;<a href="./index.html">PropertyAnimationKey</a><br/>
+<br/>
+<h1>PropertyAnimationKey</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">PropertyAnimationKey</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-animatable/src/main/kotlin/org/openrndr/animatable/PropertyAnimationKey.kt#L10">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">PropertyAnimationKey</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.PropertyAnimationKey$<init>(kotlin.reflect.KMutableProperty0((org.openrndr.animatable.PropertyAnimationKey.T)), org.openrndr.animatable.PropertyAnimationKey.T, kotlin.Long, kotlin.Long, org.openrndr.animatable.easing.Easing)/property">property</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-mutable-property0/index.html"><span class="identifier">KMutableProperty0</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.PropertyAnimationKey$<init>(kotlin.reflect.KMutableProperty0((org.openrndr.animatable.PropertyAnimationKey.T)), org.openrndr.animatable.PropertyAnimationKey.T, kotlin.Long, kotlin.Long, org.openrndr.animatable.easing.Easing)/targetValue">targetValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.PropertyAnimationKey$<init>(kotlin.reflect.KMutableProperty0((org.openrndr.animatable.PropertyAnimationKey.T)), org.openrndr.animatable.PropertyAnimationKey.T, kotlin.Long, kotlin.Long, org.openrndr.animatable.easing.Easing)/durationInNs">durationInNs</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.PropertyAnimationKey$<init>(kotlin.reflect.KMutableProperty0((org.openrndr.animatable.PropertyAnimationKey.T)), org.openrndr.animatable.PropertyAnimationKey.T, kotlin.Long, kotlin.Long, org.openrndr.animatable.easing.Easing)/startInNs">startInNs</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.PropertyAnimationKey$<init>(kotlin.reflect.KMutableProperty0((org.openrndr.animatable.PropertyAnimationKey.T)), org.openrndr.animatable.PropertyAnimationKey.T, kotlin.Long, kotlin.Long, org.openrndr.animatable.easing.Easing)/easing">easing</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.animatable.easing/-easing/index.html"><span class="identifier">Easing</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="animation-state.html">animationState</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">animationState</span><span class="symbol">: </span><span class="identifier">AnimationState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cancelled.html">cancelled</a></h4>
+</td>
+<td>
+<p>animation cancelled event</p>
+<code><span class="keyword">val </span><span class="identifier">cancelled</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-animation-event/index.html"><span class="identifier">AnimationEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="completed.html">completed</a></h4>
+</td>
+<td>
+<p>animation completed event</p>
+<code><span class="keyword">val </span><span class="identifier">completed</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-animation-event/index.html"><span class="identifier">AnimationEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="duration-in-ns.html">durationInNs</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">durationInNs</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="easing.html">easing</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">easing</span><span class="symbol">: </span><a href="../../org.openrndr.animatable.easing/-easing/index.html"><span class="identifier">Easing</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="end-in-ns.html">endInNs</a></h4>
+</td>
+<td>
+<p>end time in nanoseconds of the animation</p>
+<code><span class="keyword">val </span><span class="identifier">endInNs</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="property.html">property</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">property</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-mutable-property0/index.html"><span class="identifier">KMutableProperty0</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-in-ns.html">startInNs</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">startInNs</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-value.html">targetValue</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">targetValue</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

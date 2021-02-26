@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CatmullRom3 - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.math</a>&nbsp;/&nbsp;<a href="./index.html">CatmullRom3</a><br/>
+<br/>
+<h1>CatmullRom3</h1>
+<code><span class="keyword">class </span><span class="identifier">CatmullRom3</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-math/src/main/kotlin/org/openrndr/math/CatmullRom.kt#L202">(source)</a>
+<p>Creates a 3D Catmull-Rom spline curve.</p>
+<p>Can be represented as a segment drawn between <a href="p1.html">p1</a> and <a href="p2.html">p2</a>,
+while <a href="p0.html">p0</a> and <a href="p3.html">p3</a> are used as control points.</p>
+<p>Under some circumstances alpha can have
+no perceptible effect, for example,
+when creating closed shapes with the vertices
+forming a regular 2D polygon (even on a 3D plane).</p>
+<h3>Parameters</h3>
+<p><a name="p0"></a>
+<code>p0</code> - The first control point.</p>
+<p><a name="p1"></a>
+<code>p1</code> - The starting anchor point.</p>
+<p><a name="p2"></a>
+<code>p2</code> - The ending anchor point.</p>
+<p><a name="p3"></a>
+<code>p3</code> - The second control point.</p>
+<p><a name="alpha"></a>
+<code>alpha</code> - The <em>tension</em> of the curve.
+    Use <code>0.0</code> for the uniform spline, <code>0.5</code> for the centripetal spline, <code>1.0</code> for the chordal spline.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Creates a 3D Catmull-Rom spline curve.</p>
+<code><span class="identifier">CatmullRom3</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.CatmullRom3$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmullRom3$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/p1">p1</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmullRom3$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/p2">p2</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmullRom3$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/p3">p3</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmullRom3$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/alpha">alpha</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="alpha.html">alpha</a></h4>
+</td>
+<td>
+<p>The <em>tension</em> of the curve.
+    Use <code>0.0</code> for the uniform spline, <code>0.5</code> for the centripetal spline, <code>1.0</code> for the chordal spline.</p>
+<code><span class="keyword">val </span><span class="identifier">alpha</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p0.html">p0</a></h4>
+</td>
+<td>
+<p>The first control point.</p>
+<code><span class="keyword">val </span><span class="identifier">p0</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p1.html">p1</a></h4>
+</td>
+<td>
+<p>The starting anchor point.</p>
+<code><span class="keyword">val </span><span class="identifier">p1</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p2.html">p2</a></h4>
+</td>
+<td>
+<p>The ending anchor point.</p>
+<code><span class="keyword">val </span><span class="identifier">p2</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p3.html">p3</a></h4>
+</td>
+<td>
+<p>The second control point.</p>
+<code><span class="keyword">val </span><span class="identifier">p3</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t0.html">t0</a></h4>
+</td>
+<td>
+<p>Value of t for p0.</p>
+<code><span class="keyword">val </span><span class="identifier">t0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t1.html">t1</a></h4>
+</td>
+<td>
+<p>Value of t for p1.</p>
+<code><span class="keyword">val </span><span class="identifier">t1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t2.html">t2</a></h4>
+</td>
+<td>
+<p>Value of t for p2.</p>
+<code><span class="keyword">val </span><span class="identifier">t2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t3.html">t3</a></h4>
+</td>
+<td>
+<p>Value of t for p3.</p>
+<code><span class="keyword">val </span><span class="identifier">t3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">position</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.CatmullRom3$position(kotlin.Double)/rt">rt</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.shape/to-segment.html">toSegment</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CatmullRom3</span></a><span class="symbol">.</span><span class="identifier">toSegment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-segment3-d/index.html"><span class="identifier">Segment3D</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

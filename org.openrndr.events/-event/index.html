@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Event - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.events</a>&nbsp;/&nbsp;<a href="./index.html">Event</a><br/>
+<br/>
+<h1>Event</h1>
+<code><span class="keyword">class </span><span class="identifier">Event</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-event/src/main/kotlin/org/openrndr/events/Event.kt#L18">(source)</a>
+<p>an event class</p>
+<h3>Parameters</h3>
+<p><a name="name"></a>
+<code>name</code> - a name for the event, this is is used for logging and debugging purposes only, default is "&lt;unnamed-event&gt;"</p>
+<p><a name="postpone"></a>
+<code>postpone</code> - should message delivery for this event be postponed, default is false</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>an event class</p>
+<code><span class="identifier">Event</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$<init>(kotlin.String, kotlin.Boolean)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"&lt;unnamed-event&gt;"<span class="symbol">, </span><span class="identifier" id="org.openrndr.events.Event$<init>(kotlin.String, kotlin.Boolean)/postpone">postpone</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="listeners.html">listeners</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">listeners</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<p>a name for the event, this is is used for logging and debugging purposes only, default is "&lt;unnamed-event&gt;"</p>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="postpone.html">postpone</a></h4>
+</td>
+<td>
+<p>should message delivery for this event be postponed, default is false</p>
+<code><span class="keyword">var </span><span class="identifier">postpone</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="time-since-last-trigger.html">timeSinceLastTrigger</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">timeSinceLastTrigger</span><span class="symbol">: </span><span class="identifier">Duration</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="trigger-count.html">triggerCount</a></h4>
+</td>
+<td>
+<p>number of times this event is triggered</p>
+<code><span class="keyword">var </span><span class="identifier">triggerCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cancel.html">cancel</a></h4>
+</td>
+<td>
+<p>cancel a listener</p>
+<code><span class="keyword">fun </span><span class="identifier">cancel</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$cancel(kotlin.Function1((org.openrndr.events.Event.T, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deliver.html">deliver</a></h4>
+</td>
+<td>
+<p>deliver postponed event messages</p>
+<code><span class="keyword">fun </span><span class="identifier">deliver</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="listen.html">listen</a></h4>
+</td>
+<td>
+<p>add an event message listener</p>
+<code><span class="keyword">fun </span><span class="identifier">listen</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$listen(kotlin.Function1((org.openrndr.events.Event.T, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><code><span class="keyword">fun </span><span class="identifier">listen</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$listen(org.openrndr.events.Event((org.openrndr.events.Event.T)))/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="listen-once.html">listenOnce</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listenOnce</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$listenOnce(kotlin.Function1((org.openrndr.events.Event.T, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">T</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">listenOnce</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$listenOnce(org.openrndr.events.Event((org.openrndr.events.Event.T)))/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="trigger.html">trigger</a></h4>
+</td>
+<td>
+<p>trigger the event</p>
+<code><span class="keyword">fun </span><span class="identifier">trigger</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.events.Event$trigger(org.openrndr.events.Event.T)/message">message</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

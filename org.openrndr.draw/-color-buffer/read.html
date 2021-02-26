@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ColorBuffer.read - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="index.html">ColorBuffer</a>&nbsp;/&nbsp;<a href="./read.html">read</a><br/>
+<br/>
+<h1>read</h1>
+<a name="org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)"></a>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetBuffer">targetBuffer</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetFormat">targetFormat</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;format<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetType">targetType</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;type<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/ColorBuffer.kt#L168">(source)</a>
+<p>read the contents of the <a href="index.html">ColorBuffer</a> and write to <a href="read.html#org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetBuffer">targetBuffer</a>, potentially with format and type conversions</p>
+<h3>Parameters</h3>
+<p><a name="targetBuffer"></a>
+<code>targetBuffer</code> - a <a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html">ByteBuffer</a> to which the contents of the <a href="index.html">ColorBuffer</a> will be written</p>
+<p><a name="targetFormat"></a>
+<code>targetFormat</code> - the <a href="../-color-format/index.html">ColorFormat</a> that is used for the image data stored in <a href="read.html#org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetBuffer">targetBuffer</a>, default is <a href="format.html">ColorBuffer.format</a></p>
+<p><a name="targetType"></a>
+<code>targetType</code> - the <a href="../-color-type/index.html">ColorType</a> that is used for the image data stored in <a href="read.html#org.openrndr.draw.ColorBuffer$read(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetBuffer">targetBuffer</a>, default is <a href="type.html">ColorBuffer.type</a></p>
+<p><a name="level"></a>
+<code>level</code> - the mipmap-level of <a href="index.html">ColorBuffer</a> to read from</p>
+</BODY>
+</HTML>

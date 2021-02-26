@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RenderTargetBuilder.colorBuffer - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="index.html">RenderTargetBuilder</a>&nbsp;/&nbsp;<a href="./color-buffer.html">colorBuffer</a><br/>
+<br/>
+<h1>colorBuffer</h1>
+<a name="org.openrndr.draw.RenderTargetBuilder$colorBuffer(org.openrndr.draw.ColorBuffer, kotlin.Int)"></a>
+<code><span class="keyword">fun </span><span class="identifier">colorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(org.openrndr.draw.ColorBuffer, kotlin.Int)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(org.openrndr.draw.ColorBuffer, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/RenderTarget.kt#L252">(source)</a>
+<p>attach an existing <a href="../-color-buffer/index.html">ColorBuffer</a> to the <a href="../-render-target/index.html">RenderTarget</a></p>
+<h3>Parameters</h3>
+<p><a name="colorBuffer"></a>
+<code>colorBuffer</code> - an existing <a href="../-color-buffer/index.html">ColorBuffer</a></p>
+<p><a name="level"></a>
+<code>level</code> - the <a href="../-color-buffer/index.html">ColorBuffer</a>'s mipmap-level to attach, default is 0</p>
+<a name="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorBuffer, kotlin.Int)"></a>
+<code><span class="keyword">fun </span><span class="identifier">colorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorBuffer, kotlin.Int)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorBuffer, kotlin.Int)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorBuffer, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/RenderTarget.kt#L262">(source)</a>
+<p>attach an existing <a href="../-color-buffer/index.html">ColorBuffer</a> to the <a href="../-render-target/index.html">RenderTarget</a> and give it a name</p>
+<h3>Parameters</h3>
+<p><a name="name"></a>
+<code>name</code> - the name for the attachment</p>
+<p><a name="colorBuffer"></a>
+<code>colorBuffer</code> - an existing <a href="../-color-buffer/index.html">ColorBuffer</a></p>
+<p><a name="level"></a>
+<code>level</code> - the <a href="../-color-buffer/index.html">ColorBuffer</a>'s mipmap-level to attach, default is 0</p>
+<a name="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)"></a>
+<code><span class="keyword">fun </span><span class="identifier">colorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(kotlin.String, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/RenderTarget.kt#L276">(source)</a>
+<p>create a new <a href="../-color-buffer/index.html">ColorBuffer</a> and create a named attachment to the <a href="../-render-target/index.html">RenderTarget</a></p>
+<h3>Parameters</h3>
+<p><a name="name"></a>
+<code>name</code> - the name for the attachment</p>
+<p><a name="format"></a>
+<code>format</code> - the <a href="../-color-format/index.html">ColorFormat</a> for the <a href="../-color-buffer/index.html">ColorBuffer</a>, default is <a href="../-color-format/-r-g-ba.html">ColorFormat.RGBa</a></p>
+<p><a name="type"></a>
+<code>type</code> - the <a href="../-color-type/index.html">ColorType</a> for the <a href="../-color-buffer/index.html">ColorBuffer</a>, default is <a href="../-color-type/-u-i-n-t8.html">ColorType.UINT8</a></p>
+<a name="org.openrndr.draw.RenderTargetBuilder$colorBuffer(org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)"></a>
+<code><span class="keyword">fun </span><span class="identifier">colorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTargetBuilder$colorBuffer(org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/RenderTarget.kt#L286">(source)</a>
+<p>create a new <a href="../-color-buffer/index.html">ColorBuffer</a> and create a nameless attachment to the <a href="../-render-target/index.html">RenderTarget</a></p>
+<h3>Parameters</h3>
+<p><a name="format"></a>
+<code>format</code> - the <a href="../-color-format/index.html">ColorFormat</a> for the <a href="../-color-buffer/index.html">ColorBuffer</a>, default is <a href="../-color-format/-r-g-ba.html">ColorFormat.RGBa</a></p>
+<p><a name="type"></a>
+<code>type</code> - the <a href="../-color-type/index.html">ColorType</a> for the <a href="../-color-buffer/index.html">ColorBuffer</a>, default is <a href="../-color-type/-u-i-n-t8.html">ColorType.UINT8</a></p>
+</BODY>
+</HTML>

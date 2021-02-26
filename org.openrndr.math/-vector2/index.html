@@ -1,0 +1,368 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Vector2 - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.math</a>&nbsp;/&nbsp;<a href="./index.html">Vector2</a><br/>
+<br/>
+<h1>Vector2</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Vector2</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html"><span class="identifier">Serializable</span></a><span class="symbol">, </span><a href="../-linear-type/index.html"><span class="identifier">LinearType</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-math/src/main/kotlin/org/openrndr/math/Vector2.kt#L13">(source)</a>
+<p>Double-precision 2D vector.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Vector2</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$<init>(kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code>
+<p>Double-precision 2D vector.</p>
+<code><span class="identifier">Vector2</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$<init>(kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$<init>(kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="length.html">length</a></h4>
+</td>
+<td>
+<p>The Euclidean length of the vector.</p>
+<code><span class="keyword">val </span><span class="identifier">length</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="normalized.html">normalized</a></h4>
+</td>
+<td>
+<p>Returns a normalized version of the vector. (i.e. unit vector)</p>
+<code><span class="keyword">val </span><span class="identifier">normalized</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="squared-length.html">squaredLength</a></h4>
+</td>
+<td>
+<p>The squared Euclidean length of the vector.</p>
+<code><span class="keyword">val </span><span class="identifier">squaredLength</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="x.html">x</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">x</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="xx.html">xx</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">xx</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="xy0.html">xy0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">xy0</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="xy00.html">xy00</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">xy00</span><span class="symbol">: </span><a href="../-vector4/index.html"><span class="identifier">Vector4</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="xy01.html">xy01</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">xy01</span><span class="symbol">: </span><a href="../-vector4/index.html"><span class="identifier">Vector4</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="xy1.html">xy1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">xy1</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="y.html">y</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">y</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="yx.html">yx</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">yx</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="yy.html">yy</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">yy</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cross.html">cross</a></h4>
+</td>
+<td>
+<p>Calculates a cross product between this <a href="./index.html">Vector2</a> and <a href="cross.html#org.openrndr.math.Vector2$cross(org.openrndr.math.Vector2)/right">right</a>.</p>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="identifier">cross</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$cross(org.openrndr.math.Vector2)/right">right</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="distance-to.html">distanceTo</a></h4>
+</td>
+<td>
+<p>Calculates the Euclidean distance to <a href="distance-to.html#org.openrndr.math.Vector2$distanceTo(org.openrndr.math.Vector2)/other">other</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">distanceTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$distanceTo(org.openrndr.math.Vector2)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="div.html">div</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">div</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$div(kotlin.Double)/d">d</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code><br/>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">div</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$div(org.openrndr.math.Vector2)/d">d</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dot.html">dot</a></h4>
+</td>
+<td>
+<p>Calculates a dot product between this <a href="./index.html">Vector2</a> and <a href="dot.html#org.openrndr.math.Vector2$dot(org.openrndr.math.Vector2)/right">right</a>.</p>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="identifier">dot</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$dot(org.openrndr.math.Vector2)/right">right</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$get(kotlin.Int)/i">i</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minus.html">minus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$minus(org.openrndr.math.Vector2)/vector2">vector2</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code><br/>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$minus(kotlin.Double)/d">d</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mix.html">mix</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mix</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$mix(org.openrndr.math.Vector2, kotlin.Double)/o">o</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$mix(org.openrndr.math.Vector2, kotlin.Double)/mix">mix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="perpendicular.html">perpendicular</a></h4>
+</td>
+<td>
+<p>Calculates a vector perpendicular to the current one.</p>
+<code><span class="keyword">fun </span><span class="identifier">perpendicular</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$perpendicular(org.openrndr.math.YPolarity)/polarity">polarity</span><span class="symbol">:</span>&nbsp;<a href="../-y-polarity/index.html"><span class="identifier">YPolarity</span></a>&nbsp;<span class="symbol">=</span>&nbsp;YPolarity.CW_NEGATIVE_Y<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$plus(org.openrndr.math.Vector2)/vector2">vector2</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code><br/>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$plus(kotlin.Double)/d">d</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reflect.html">reflect</a></h4>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="identifier">reflect</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$reflect(org.openrndr.math.Vector2)/surfaceNormal">surfaceNormal</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="rotate.html">rotate</a></h4>
+</td>
+<td>
+<p>Creates a new <a href="./index.html">Vector2</a> with the given rotation and origin.</p>
+<code><span class="keyword">fun </span><span class="identifier">rotate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$rotate(kotlin.Double, org.openrndr.math.Vector2)/degrees">degrees</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$rotate(kotlin.Double, org.openrndr.math.Vector2)/origin">origin</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ZERO<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="squared-distance-to.html">squaredDistanceTo</a></h4>
+</td>
+<td>
+<p>Calculates the squared Euclidean distance to <a href="squared-distance-to.html#org.openrndr.math.Vector2$squaredDistanceTo(org.openrndr.math.Vector2)/other">other</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">squaredDistanceTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$squaredDistanceTo(org.openrndr.math.Vector2)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="times.html">times</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$times(kotlin.Double)/d">d</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code><br/>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$times(org.openrndr.math.Vector2)/v">v</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-double-array.html">toDoubleArray</a></h4>
+</td>
+<td>
+<p>Casts to <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html">DoubleArray</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">toDoubleArray</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html"><span class="identifier">DoubleArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-int.html">toInt</a></h4>
+</td>
+<td>
+<p>Casts to <a href="../-int-vector2/index.html">IntVector2</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">toInt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-int-vector2/index.html"><span class="identifier">IntVector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unary-minus.html">unaryMinus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">unaryMinus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vector3.html">vector3</a></h4>
+</td>
+<td>
+<p>Upcasts to <a href="../-vector3/index.html">Vector3</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">vector3</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$vector3(kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.x<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$vector3(kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.y<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$vector3(kotlin.Double, kotlin.Double, kotlin.Double)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">)</span><span class="symbol">: </span><a href="../-vector3/index.html"><span class="identifier">Vector3</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vector4.html">vector4</a></h4>
+</td>
+<td>
+<p>Upcasts to <a href="../-vector4/index.html">Vector4</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">vector4</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2$vector4(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.x<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$vector4(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.y<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$vector4(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Vector2$vector4(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/w">w</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">)</span><span class="symbol">: </span><a href="../-vector4/index.html"><span class="identifier">Vector4</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-i-n-f-i-n-i-t-y.html">INFINITY</a></h4>
+</td>
+<td>
+<p>A <a href="./index.html">Vector2</a> representation for infinite values.</p>
+<code><span class="keyword">val </span><span class="identifier">INFINITY</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-o-n-e.html">ONE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ONE</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-n-i-t_-x.html">UNIT_X</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">UNIT_X</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-n-i-t_-y.html">UNIT_Y</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">UNIT_Y</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-z-e-r-o.html">ZERO</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ZERO</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from-polar.html">fromPolar</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromPolar</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Vector2.Companion$fromPolar(org.openrndr.math.Polar)/polar">polar</span><span class="symbol">:</span>&nbsp;<a href="../-polar/index.html"><span class="identifier">Polar</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../clamp.html">clamp</a></h4>
+</td>
+<td>
+<p>Returns <a href="./index.html">Vector2</a> whose value is limited between <a href="../clamp.html#org.openrndr.math$clamp(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/min">min</a> and <a href="../clamp.html#org.openrndr.math$clamp(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/max">max</a> per vector component.</p>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">.</span><span class="identifier">clamp</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math$clamp(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/min">min</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math$clamp(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/max">max</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.shape/map.html">map</a></h4>
+</td>
+<td>
+<p>Remaps <a href="./index.html">Vector2</a> from a position on the <a href="../../org.openrndr.shape/map.html#org.openrndr.shape$map(org.openrndr.math.Vector2, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle, kotlin.Boolean)/sourceRectangle">sourceRectangle</a> to
+a proportionally equivalent position on the <a href="../../org.openrndr.shape/map.html#org.openrndr.shape$map(org.openrndr.math.Vector2, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle, kotlin.Boolean)/targetRectangle">targetRectangle</a>.</p>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">.</span><span class="identifier">map</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape$map(org.openrndr.math.Vector2, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle, kotlin.Boolean)/sourceRectangle">sourceRectangle</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape$map(org.openrndr.math.Vector2, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle, kotlin.Boolean)/targetRectangle">targetRectangle</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape$map(org.openrndr.math.Vector2, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle, kotlin.Boolean)/clamp">clamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../map.html">map</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">.</span><span class="identifier">map</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math$map(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, kotlin.Boolean)/beforeLeft">beforeLeft</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math$map(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, kotlin.Boolean)/beforeRight">beforeRight</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math$map(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, kotlin.Boolean)/afterLeft">afterLeft</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math$map(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, kotlin.Boolean)/afterRight">afterRight</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math$map(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2, kotlin.Boolean)/clamp">clamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../mod.html">mod</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">.</span><span class="identifier">mod</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math$mod(org.openrndr.math.Vector2, org.openrndr.math.Vector2)/b">b</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../saturate.html">saturate</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">.</span><span class="identifier">saturate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../smoothstep.html">smoothstep</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">.</span><span class="identifier">smoothstep</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math$smoothstep(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/edge0">edge0</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math$smoothstep(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/edge1">edge1</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

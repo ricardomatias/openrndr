@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AnimationKey - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.animatable</a>&nbsp;/&nbsp;<a href="./index.html">AnimationKey</a><br/>
+<br/>
+<h1>AnimationKey</h1>
+<code><span class="keyword">class </span><span class="identifier">AnimationKey</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-animatable/src/main/kotlin/org/openrndr/animatable/AnimationKey.kt#L10">(source)</a>
+<p>Animation key class</p>
+<p><strong>Author</strong><br/>
+Edwin Jakobs</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-animation-mode/index.html">AnimationMode</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AnimationMode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-animation-state/index.html">AnimationState</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">AnimationState</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Animation key class</p>
+<code><span class="identifier">AnimationKey</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.AnimationKey$<init>(kotlin.String, kotlin.Double, kotlin.Long, kotlin.Long)/variable">variable</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.AnimationKey$<init>(kotlin.String, kotlin.Double, kotlin.Long, kotlin.Long)/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.AnimationKey$<init>(kotlin.String, kotlin.Double, kotlin.Long, kotlin.Long)/duration">duration</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.AnimationKey$<init>(kotlin.String, kotlin.Double, kotlin.Long, kotlin.Long)/start">start</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="animation-mode.html">animationMode</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">animationMode</span><span class="symbol">: </span><span class="identifier">AnimationMode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="animation-state.html">animationState</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">animationState</span><span class="symbol">: </span><span class="identifier">AnimationState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="completion-callbacks.html">completionCallbacks</a></h4>
+</td>
+<td>
+<p>returns all completion callbacks for the animation</p>
+<code><span class="keyword">var </span><span class="identifier">completionCallbacks</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="symbol">(</span><a href="../-animatable/index.html"><span class="identifier">Animatable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="duration.html">duration</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">duration</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="duration-seconds.html">durationSeconds</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">durationSeconds</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="easing.html">easing</a></h4>
+</td>
+<td>
+<p>sets the easing mode for the animation</p>
+<code><span class="keyword">var </span><span class="identifier">easing</span><span class="symbol">: </span><a href="../../org.openrndr.animatable.easing/-easer/index.html"><span class="identifier">Easer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from.html">from</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">from</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message.html">message</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">message</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stage.html">stage</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stage</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start.html">start</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">start</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target.html">target</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">target</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variable.html">variable</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">variable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-completion-callback.html">addCompletionCallback</a></h4>
+</td>
+<td>
+<p>adds a completion callback that is called when the animation ends</p>
+<code><span class="keyword">fun </span><span class="identifier">addCompletionCallback</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.AnimationKey$addCompletionCallback(kotlin.Function1((org.openrndr.animatable.Animatable, kotlin.Unit)))/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-animatable/index.html"><span class="identifier">Animatable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="play.html">play</a></h4>
+</td>
+<td>
+<p>plays the animation</p>
+<code><span class="keyword">fun </span><span class="identifier">play</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.AnimationKey$play(kotlin.Double)/from">from</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop.html">stop</a></h4>
+</td>
+<td>
+<p>stops the animation</p>
+<code><span class="keyword">fun </span><span class="identifier">stop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

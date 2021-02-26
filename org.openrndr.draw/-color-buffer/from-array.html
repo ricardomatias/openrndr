@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ColorBuffer.fromArray - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="index.html">ColorBuffer</a>&nbsp;/&nbsp;<a href="./from-array.html">fromArray</a><br/>
+<br/>
+<h1>fromArray</h1>
+<a name="org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)"></a>
+<code><span class="keyword">fun </span><span class="identifier">fromArray</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/bytes">bytes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/length">length</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;bytes.size<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/formatHint">formatHint</span><span class="symbol">:</span>&nbsp;<a href="../-image-file-format/index.html"><span class="identifier">ImageFileFormat</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">ColorBuffer</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/ColorBuffer.kt#L363">(source)</a>
+<p>create a <a href="index.html">ColorBuffer</a> from a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a> containing a formatted image (meaning any of the formats in <a href="../-image-file-format/index.html">ImageFileFormat</a>)</p>
+<h3>Parameters</h3>
+<p><a name="bytes"></a>
+<code>bytes</code> - a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a> containing a formatted image</p>
+<p><a name="offset"></a>
+<code>offset</code> - offset used for reading from <a href="from-array.html#org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/bytes">bytes</a>, default is 0</p>
+<p><a name="length"></a>
+<code>length</code> - number of bytes to be used from <a href="from-array.html#org.openrndr.draw.ColorBuffer.Companion$fromArray(kotlin.ByteArray, kotlin.Int, kotlin.Int, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/bytes">bytes</a>, default is <a href="#">bytes.size</a></p>
+<p><a name="formatHint"></a>
+<code>formatHint</code> - an optiononal <a href="../-image-file-format/index.html">ImageFileFormat</a> hint, default is nuull</p>
+</BODY>
+</HTML>

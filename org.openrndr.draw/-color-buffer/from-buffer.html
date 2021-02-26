@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ColorBuffer.fromBuffer - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="index.html">ColorBuffer</a>&nbsp;/&nbsp;<a href="./from-buffer.html">fromBuffer</a><br/>
+<br/>
+<h1>fromBuffer</h1>
+<a name="org.openrndr.draw.ColorBuffer.Companion$fromBuffer(java.nio.ByteBuffer, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)"></a>
+<code><span class="keyword">fun </span><span class="identifier">fromBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromBuffer(java.nio.ByteBuffer, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/bytes">bytes</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromBuffer(java.nio.ByteBuffer, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/formatHint">formatHint</span><span class="symbol">:</span>&nbsp;<a href="../-image-file-format/index.html"><span class="identifier">ImageFileFormat</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBuffer.Companion$fromBuffer(java.nio.ByteBuffer, org.openrndr.draw.ImageFileFormat, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">ColorBuffer</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/ColorBuffer.kt#L384">(source)</a>
+<p>create a <a href="index.html">ColorBuffer</a> from a <a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html">ByteBuffer</a> holding a formatted image (meaning any of the formats in <a href="../-image-file-format/index.html">ImageFileFormat</a></p>
+<h3>Parameters</h3>
+<p><a name="bytes"></a>
+<code>bytes</code> - a <a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html">ByteBuffer</a> containing a formatted image</p>
+<p><a name="formatHint"></a>
+<code>formatHint</code> - an optional <a href="../-image-file-format/index.html">ImageFileFormat</a> hint</p>
+<p><a name="session"></a>
+<code>session</code> - the <a href="../-session/index.html">Session</a> under which this <a href="index.html">ColorBuffer</a> should be created, default is <a href="../-session/active.html">Session.active</a></p>
+</BODY>
+</HTML>
